@@ -1,0 +1,27 @@
+[
+  {
+    "Recipe": {
+      "Id": 1,
+      "Name": "CabbageAndTomatoSalad",
+      "Products": [
+        {
+          "ProductJson": {
+            "Name": "Tomatoes",
+            "CountProduct": 2,
+            "TypeProcess": "FinelyCutTomatoes",
+            "Processor": "Slide"
+
+          }
+        },
+        {
+          "ProductJson": {
+            "Name": "Cabbage",
+            "CountProduct": 2,
+            "TypeProcess": "CoarselyCutCabbage",
+            "Processor": "Slide"
+          }
+        }
+      ]
+    }
+  }
+]

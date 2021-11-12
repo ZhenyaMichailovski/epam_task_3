@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace epam_task_3.Enums
 {
-    public enum SlideProdectEnum
+    public enum TypeProductEnum
     {
         SlideCabbage = 1,
-        SlideTomotoes,
+        SlideTomatoes,
     }
 }

@@ -11,7 +11,6 @@ namespace epam_task_3.Product
         public string Name { get; set; }
 
         public const decimal Cost = 20;
-
         public Product(string name)
         {
             Name = name;

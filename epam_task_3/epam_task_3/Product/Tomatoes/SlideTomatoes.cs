@@ -9,9 +9,9 @@ namespace epam_task_3.Product.Tomatoes
 {
     public class SlideTomatoes : Product
     {
-        public SlideProcessorEnum TomatoesProcessorEnum { get; }
+        public TypeProcessorEnum TomatoesProcessorEnum { get; }
         public decimal CostOfSlideTomatoes { get; }
-        public SlideTomatoes(string name, decimal costOfSlide, SlideProcessorEnum tomatoesProcessorEnum)
+        public SlideTomatoes(string name, decimal costOfSlide, TypeProcessorEnum tomatoesProcessorEnum)
            : base(name)
         {
             CostOfSlideTomatoes = costOfSlide + Cost;

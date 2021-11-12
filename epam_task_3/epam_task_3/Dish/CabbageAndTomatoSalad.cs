@@ -8,6 +8,7 @@ namespace epam_task_3.Dish
 {
     public class CabbageAndTomatoSalad : Dish
     {
+        public const decimal Cost = 100;
         public CabbageAndTomatoSalad(List<Product.Product> products)
             : base(products)
         { }

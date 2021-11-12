@@ -1,0 +1,10 @@
+[
+  {
+    "Order": {
+      "Id": 1,
+      "Date" : "12.11.2021",
+      "Dish": [ "CabbageAndTomatoSalad" ]
+    }
+  }
+]
+

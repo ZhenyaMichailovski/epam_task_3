@@ -1,0 +1,19 @@
+[
+  {
+    "QueueSlicing": {
+      "Id": 1,
+      "NameProduct": "SlideCabbage",
+      "TimeToCutting": 10,
+      "StartTime": "12.11.2021 16:58:00"
+    }
+  },
+  {
+    "QueueSlicing": {
+      "Id": 2,
+      "NameProduct" : "SlideTomatoes",
+      "TimeToCutting": 5,
+      "StartTime": "12.11.2021 16:58:00"
+    }
+  }
+]
+

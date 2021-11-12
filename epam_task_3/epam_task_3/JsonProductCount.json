@@ -1,0 +1,17 @@
+[
+  {
+    "ProductCount": {
+      "Id": 1,
+      "Name": "Tomatoes",
+      "Count": 40
+    }
+  },
+  {
+    "ProductCount": {
+      "Id": 2,
+      "Name" : "Cabbage",
+      "Count": 40
+    }
+  }
+]
+

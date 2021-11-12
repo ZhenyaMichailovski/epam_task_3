@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace epam_task_3.Enums
 {
-    public enum SlideProcessorEnum
+    public enum ProcessorEnum
     {
-        FinelyCutCabbage = 1,
-        CoarselyCutCabbage,
-        FinelyCutTomatoes,
-        CoarselyCutTomatoes,
+        Slide = 1,
     }
 }

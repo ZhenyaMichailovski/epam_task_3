@@ -1,27 +1,29 @@
-﻿using System;
+﻿using epam_task_3.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using epam_task_3.Enums;
-using epam_task_3.Product.Cabbage;
-using epam_task_3.Product.Tomatoes;
-using epam_task_3.Product;
-using epam_task_3.ProductProcessor.CutterProcessor;
 
-namespace epam_task_3.FactoryProcessor
+namespace epam_task_3.ProductProcessor.CutterProcessor
 {
-    public class FactoryProcessor
+    public class CutterProcessor : ProductProcessor
     {
-        public Product.Product CreateSlideProduct(SlideProductEnum slideProdectEnum, SlideProcessorEnum slideProcessorEnum)
+        public const int Power = 5;
+
+        public const decimal Cost = 10;
+        public CutterProcessor()
+            : base()
+        { }
+
+        public Product.Product CreateSliceProduct(ProductEnum slideProdectEnum, TypeProcessorEnum slideProcessorEnum)
         {
-            
             switch (slideProdectEnum)
             {
-                case SlideProductEnum.SlideCabbage:
+                case ProductEnum.Cabbage:
                     CabbageCutter cabbageCutter = new CabbageCutter();
                     return cabbageCutter.CreateCutterCabbage(slideProcessorEnum);
-                case SlideProductEnum.SlideTomotoes:
+                case ProductEnum.Tomatoes:
                     TomatoesCutter tomatoesCutter = new TomatoesCutter();
                     return tomatoesCutter.CreateSlideTomatoes(slideProcessorEnum);
                 default:
