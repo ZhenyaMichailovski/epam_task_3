@@ -29,6 +29,10 @@ namespace epam_task_3.Queue.QueueSlicing
             StartTime = startTime;
         }
 
+        public QueueSlicing()
+        {
+        }
+
         public override bool Equals(object obj)
         {
             var item = (QueueSlicing)obj;

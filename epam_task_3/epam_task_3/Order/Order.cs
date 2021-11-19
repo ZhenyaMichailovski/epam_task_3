@@ -16,6 +16,6 @@ namespace epam_task_3.Order
         public DateTime Date { get; set; }
 
         [JsonProperty("Dish")]
-        public List<string> DishNames { get; set; }
+        public List<string> Dish { get; set; }
     }
 }

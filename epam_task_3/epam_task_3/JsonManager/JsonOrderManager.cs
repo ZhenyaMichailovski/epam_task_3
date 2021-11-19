@@ -35,7 +35,7 @@ namespace epam_task_3.JsonManager
         public void Delete(int id)
         {
             var items = GetAll();
-            var item = items.FirstOrDefault(x => x.DishJson.Id == id);
+            var item = items.FirstOrDefault(x => x.Order.Id == id);
             items.Remove(item);
             SetAll(items);
         }
@@ -43,8 +43,10 @@ namespace epam_task_3.JsonManager
         public void SetAll(List<OrderParent> queueSlicingParents)
         {
             var str = JsonConvert.SerializeObject(queueSlicingParents);
-            var sw = File.CreateText(Path);
-            sw.Write(str);
+            using (var sw = File.CreateText(Path))
+            {
+                sw.Write(str);
+            }
         }
     }
 }

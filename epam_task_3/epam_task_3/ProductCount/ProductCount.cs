@@ -17,5 +17,12 @@ namespace epam_task_3.ProductCount
 
         [JsonProperty("Count")]
         public int Count { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            var item = (ProductCount)obj;
+            return item.Id == this.Id;
+
+        }
     }
 }

@@ -14,5 +14,9 @@ namespace epam_task_3.Queue.QueueSlicing
         {
             QueueSlicing = item;
         }
+
+        public QueueSlicingParent()
+        {
+        }
     }
 }

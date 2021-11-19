@@ -12,8 +12,8 @@ namespace epam_task_3.ProductJson
         [JsonProperty("Name")]
         public string Name { get; set; }
 
-        [JsonProperty("Count")]
-        public int Count { get; set; }
+        [JsonProperty("CountProduct")]
+        public int CountProduct { get; set; }
 
         [JsonProperty("TypeProcess")]
         public string TypeProcess { get; set; }

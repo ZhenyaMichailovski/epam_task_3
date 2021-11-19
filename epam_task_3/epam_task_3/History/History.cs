@@ -9,7 +9,7 @@ namespace epam_task_3.History
 {
     public class History
     {
-        [JsonProperty("Id")]
+        
         public int Id { get; set; }
 
         [JsonProperty("Date")]
@@ -17,5 +17,11 @@ namespace epam_task_3.History
 
         [JsonProperty("Dish")]
         public List<string> Dish { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            var item = (History)obj;
+            return (item.Id == this.Id);
+        }
     }
 }

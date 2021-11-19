@@ -34,7 +34,7 @@ namespace epam_task_3.ProductProcessor.CutterProcessor
                         TimeToCutting = Time
                     }
                 });
-                jsonQueueSlicingManager.SetAll(queueSlicings)
+                jsonQueueSlicingManager.SetAll(queueSlicings);
             }
             else
                 throw new Exception("Очередь занята!");

@@ -40,11 +40,15 @@ namespace epam_task_3.JsonManager
             SetAll(items);
         }
 
-        public void SetAll(List<HistoryParent> queueSlicingParents)
+        public void SetAll(List<HistoryParent> historyParents)
         {
-            var str = JsonConvert.SerializeObject(queueSlicingParents);
-            var sw = File.CreateText(Path);
-            sw.Write(str);
+            
+            var str = JsonConvert.SerializeObject(historyParents);
+
+            using (var sw = File.CreateText(Path))
+            {
+                sw.Write(str);
+            }
         }
     }
 }

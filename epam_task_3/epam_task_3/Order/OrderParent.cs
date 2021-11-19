@@ -8,6 +8,6 @@ namespace epam_task_3.Order
 {
     public class OrderParent
     {
-        public Order DishJson { get; set; }
+        public Order Order { get; set; }
     }
 }

@@ -43,8 +43,8 @@ namespace epam_task_3.JsonManager
         public void SetAll(List<ProductCountParent> queueSlicingParents)
         {
             var str = JsonConvert.SerializeObject(queueSlicingParents);
-            var sw = File.CreateText(Path);
-            sw.Write(str);
+            using (var sw = File.CreateText(Path))
+                sw.Write(str);
         }
     }
 }
